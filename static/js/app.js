@@ -3,8 +3,7 @@ var url = "data/samples.json";
 function optionChanged(newSample) {
     console.log(`Entering ${arguments.callee.name} [ ${newSample}]`)
         // Fetch new data each time a new sample is selected
-    createBarchart(newSample);
-    createBubbleChart(newSample);
+    buildCharts(newSample);
     buildMetadata(newSample);
 }
 
